@@ -1,2 +1,0 @@
-https://github.com/hyperskill/hs-test-python/archive/release.tar.gz
-requests~=2.25.1
