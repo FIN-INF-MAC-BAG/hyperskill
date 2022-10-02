@@ -1,0 +1,25 @@
+<h5>Description</h5>
+
+<p>In the previous stages, we worked with different real-world currencies but the exchange rates were fixed. Unfortunately (or not, depending on your political stance), we don't really have fixed exchange rates in today's world. At this stage, you will have to work with the Internet to get the information! The <a target="_blank" href="http://www.floatrates.com/json-feeds.html" rel="noopener noreferrer nofollow">FloatRates</a> site contains a special JSON page for each currency. Your task is to make requests to these pages and download the actual data on the exchange rates of the US dollar and the euro. Remember, that the data is stored in JSON format.</p>
+
+<h5>Objectives</h5>
+
+<p>There are many currency codes, for example, RUB, ARS, HNL, AUD, MAD, etc. Choose the one you like best and return the information about the exchange rates from the site specified above for only two currencies: USD and EUR.</p>
+
+<ol>
+	<li>Select one currency code, take it as the user input.</li>
+	<li>Make a request to <code class="language-json"><a target="_blank" href="http://www.floatrates.com/daily/YOUR_CURRENCY_CODE.json" rel="noopener noreferrer nofollow">http://www.floatrates.com/daily/<strong>YOUR_CURRENCY_CODE</strong>.json</a></code>.<span style="color: #ff4363;"> </span>Don't forget that you need to put the code in lowercase.</li>
+	<li>Print your result for USD and EUR.</li>
+</ol>
+
+<h5>Example</h5>
+
+<p>The greater-than symbol followed by a space (<code class="language-json">&gt; </code>) represents the user input. Note that it's not part of the input.</p>
+
+<p><div class="alert alert-primary">The results of your output may differ, as the service updates the data once in twelve hours. Don't hesitate to print the whole string for your own interest, but it is not a part of the stage.</div></p>
+
+<p>The output for HNL:</p>
+
+<pre><code class="language-json">&gt; HNL
+{'code': 'USD', 'alphaCode': 'USD', 'numericCode': '840', 'name': 'U.S. Dollar', 'rate': 0.040212252288502, 'date': 'Sun, 5 Jul 2020 12:00:01 GMT', 'inverseRate': 24.868042526579}
+{'code': 'EUR', 'alphaCode': 'EUR', 'numericCode': '978', 'name': 'Euro', 'rate': 0.035775653590882, 'date': 'Sun, 5 Jul 2020 12:00:01 GMT', 'inverseRate': 27.951970114527}</code></pre>
